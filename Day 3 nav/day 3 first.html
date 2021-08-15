@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link rel="Stylesheet"href="day 3 first.css">
+        <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    </head>
+    <body>
+        <div class="img">
+            <img class="img-img"src="register.jpg"alt="">
+            <div class="img_overlay">
+            <h1>STUDENT REGISTRATION FORM</h1>
+            <br>
+            <form>
+            <label > First Name</label><br>
+            <input type="text" id="firstname" name="First Name" placeholder="First Name"required><br>
+            <br>
+            <label>Middle Name</label><br>
+            <input type="text" id="middlename" name="Middle Name"placeholder="Middle Name"><br>
+            <br>
+            <label  >Last Name</label><br>
+            <input type="text" id="lastname" name="LastName" placeholder="Last Name"required><br>   
+            <br>         
+            <label>Gender</label>
+            <div id="gender">
+            <input type="radio" id="male" value="Male" name="gender">Male
+            <input type="radio" id="female" value="Female" name="gender">Female
+            <input type="radio" id="other"value="other" name="other">Other
+            </div>
+            <br>
+            <div>
+                <label>Date of Birth<br></label>
+                <input type="date" id="dob" name="date"required>
+            </div>
+            <br>
+            <label>Phone Number</label><br>
+            <input type="text" id="pno"name="Phone Number"placeholder="Phone no" maxlength="10"required><br>
+            <br>
+            <label>Telephone</label><br>
+            <input type="tel" id="tel" value="" placeholder="1234-123-156"><br>
+            <br>
+            <label>Skills</label><br><div id="skill">
+            <label>Java</label>
+            <input type="range" id="range1"name="java"><br>
+            <label>Python</label>
+            <input type="range" id="range2"name="py"><br></div>
+            <br>
+            <label for="email">Email</label><br>
+            <input type="text" id="email" placeholder="Email id" name="email"required><br>
+            <br>
+            <label for="password">Password</label><br>
+            <input type="password" id="psd"placeholder="Enter Password"required><br>
+            <br>
+            <label for="password">Re-type Password</label><br>
+            <input type="password"id="psd1"placeholder="Re-type Password"required><br>
+            <br>
+            <label>Qualification</label>
+            <br><br><div id="degree">
+            <label>Degree</label><br>
+            <input type="checkbox" id="be"value="B.E">
+            <label>B.E</label>
+            <input type="checkbox"id="btech" value="b.tech">
+            <label>B.Tech</label></div>
+            <br><br>
+            <label>Stream</label><br>
+            <input list="stream">
+            <datalist id="stream">
+                <option value="Aeronatical Engineering"></option>
+                <option value="Automobile Engineering"></option>
+                <option value="BioMedical Engineering"></option>
+                <option value="BioTech Engineering"></option>
+                <option value="Civil Engineering"></option>
+                <option value="Chemical Engineering"></option>
+                <option value="Electrical and Electronics Engineering"></option>
+                <option value="Information Technology"></option>
+                <option value="Mechanical Engineering"></option>
+            </datalist>
+            <br><br>
+            <label>Resume</label><br>
+            <input type="file" id="resume" onclick="alert('Submitted successfully')" value="file"required><br>
+            <br>
+            <br><input type="submit" id="btn" value="Submit">
+            <input type="reset" >
+            </form>
+            </div>
+        </div>
+    </body>
+</html>
+        
+
+
+
+
+
+            
